@@ -14,6 +14,7 @@
                 display: none;
             }
         </style>
+        <!-- <link rel="import" href="music/R.E.M. - Losing My Religion.html"> -->
         <!-- <script src="http://code.jquery.com/jquery-3.2.1.js"</script> -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     </head>
@@ -38,12 +39,19 @@
             </div>
             <a style="cursor:hand;cursor:pointer;" onclick="document.getElementById('text').style.display='none'">R.E.M. – Losing My Religion</a>
             <audio src="https://rocld.com/m5i06" controls></audio>
-            <!-- <link rel="import" href="https://rocld.com/m5i0a"> -->
             <pre>https://rocld.com/m5i0a</pre>
+            <script>
+                function show() {
+                var time = link.import.querySelector('*');
+                document.body.appendChild(time);
+                };
+            </script>
+            <link rel="import" id="link" onload="show()" href="music/R.E.M. - Losing My Religion.html">
 
             <br>
             <!-- <script src="https://rocld.com/m5i0a"></script> -->
-            <iframe src="https://raw.githubusercontent.com/fakendzon/songs/master/music/R.E.M.%20-%20Losing%20My%20Religion"></iframe>
+            <!-- <iframe src="https://1drv.ms/t/s!At9w-yh1ETdUhWXglDv045SuhgBI"></iframe> -->
+            <!-- <iframe src="https://raw.githubusercontent.com/fakendzon/songs/master/music/R.E.M.%20-%20Losing%20My%20Religion"></iframe> -->
             <!-- <iframe src="music/R.E.M. - Losing My Religion"></iframe> -->
             <!-- <iframe src="https://raw.githubusercontent.com/fakendzon/songs/master/songs.html"></iframe> -->
             <!-- <iframe src="https://rocld.com/m5i0a"></iframe> -->
