@@ -8,6 +8,7 @@
                 display: none;
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <!-- <audio src="https://cloud.mail.ru/public/4wtm/SDbKKsQfo" type="audio/mpeg" controls></audio> -->
@@ -39,7 +40,31 @@
             </script>
             <!-- <link rel="import" id="link" onload="show()" href="music/R.E.M. - Losing My Religion.html"> -->
             <!-- <link rel="import" id="link1" onload="show(id)" href="music/The Rolling Stones – Paint It Black.html"> -->
-            <embed src="music/R.E.M. - Losing My Religion.txt">
+
+            <script>
+                function spoiler(id) {
+                    if (document.getElementById(id).style.display=='none') {
+                        document.getElementById(id).style.display=''}
+                    else {
+                        document.getElementById(id).style.display='none'
+                }}
+            </script>
+
+            <div>
+                <a style="cursor:hand;cursor:pointer;" onclick="spoiler('pre1')">R.E.M. – Losing My Religion</a>
+                <audio src="https://rocld.com/m5i06" controls></audio>
+                <pre id="pre1"></pre>
+                <script>$('#pre1').load("music/R.E.M.%20-%20Losing%20My%20Religion.txt")</script>
+            </div>
+            <div>
+                <a style="cursor:hand;cursor:pointer;" onclick="spoiler('pre2')">The Rolling Stones – Paint It Black</a>
+                <audio src="https://rocld.com/m5i60" controls></audio>
+                <pre id="pre2"></pre><script>document.getElementById(pre2).style.display='none'</script>
+                <script>
+                    id = 'pre2';
+                    $('#pre2').load("music/The%20Rolling%20Stones%20–%20Paint%20It%20Black.txt")
+                </script>
+            </div>
         </div>
     </body> 
 </html>
