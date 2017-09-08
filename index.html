@@ -29,12 +29,17 @@
             </div>
 
             <script>
-                function show() {
-                var time = link.import.querySelector('*');
-                document.body.appendChild(time);
+                function show(linkId) {
+                    console.log(linkId);
+                    var time = link.import.querySelector('div');
+                    console.log(linkId.import);
+                    document.body.appendChild(time);
+                    <!-- var time = link.import.querySelector('*'); -->
                 };
             </script>
-            <link rel="import" id="link" onload="show()" href="music/R.E.M. - Losing My Religion.html">
+            <!-- <link rel="import" id="link" onload="show()" href="music/R.E.M. - Losing My Religion.html"> -->
+            <!-- <link rel="import" id="link1" onload="show(id)" href="music/The Rolling Stones – Paint It Black.html"> -->
+            <embed src="music/R.E.M. - Losing My Religion.txt">
         </div>
     </body> 
 </html>
