@@ -3,28 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>Songs</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
         <div>
             <div>
-                <a style="cursor:hand;cursor:pointer;" onclick="spoiler('pre1')">R.E.M. – Losing My Religion</a>
+                <a onclick="spoiler(this)">R.E.M. - Losing My Religion</a>
                 <audio preload="metadata" src="https://rocld.com/m5i06" controls></audio>
-                <pre id="pre1" style="display: none;"></pre>
-                <script>$('#pre1').load("music/R.E.M.%20-%20Losing%20My%20Religion.txt")</script>
             </div>
             <div>
-                <a style="cursor:hand;cursor:pointer;" onclick="spoiler('pre2')">The Rolling Stones – Paint It Black</a>
+                <a onclick="spoiler(this)">The Rolling Stones – Paint It Black</a>
                 <audio preload="metadata" src="https://rocld.com/m5i60" controls></audio>
-                <pre id="pre2" style="display: none;"></pre>
-                <script>$('#pre2').load("music/The%20Rolling%20Stones%20–%20Paint%20It%20Black.txt")</script>
             </div>
-            <div id="pre3">
-                <a style="cursor:hand;cursor:pointer;" onclick="spoiler(this)">Holly Henry – Seven Nation Army (teemid remix)</a>
+            <div>
+                <a onclick="spoiler(this)">Holly Henry – Seven Nation Army (teemid remix)</a>
                 <audio preload="metadata" src="https://rocld.com/m5ird" controls></audio>
-                <!-- <pre id="pre3" style="display: none;"></pre> -->
-                <!-- <script>$('#pre3').load("music/Holly%20Henry%20–%20Seven%20Nation%20Army%20(teemid%20remix).txt")</script> -->
             </div>
         </div>
     </body> 

@@ -1,0 +1,9 @@
+A {
+    cursor:hand;
+    cursor:pointer;
+}
+
+A:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red; /* Ссылка красного цвета */
+}
