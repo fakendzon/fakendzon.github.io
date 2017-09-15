@@ -32,6 +32,8 @@ function spoiler(obj) {
         newPre.setAttribute("id", "text");
         obj.parentNode.appendChild(newPre);
         $('#text').load("music/" + obj.text.replace(new RegExp(" ",'g'),"%20") + ".txt");
+        a = document.getElementById("text").textContent;
         newPre.removeAttribute('id');
+        console.log(a);
     }
 }
