@@ -1,0 +1,5 @@
+#wrap {position: absolute; }
+/* #wrap img {height: 50px;} */
+/* #wrap img {height: 50%;} */
+/* #wrap img {position: absolute; width: 500%; background:#333; border: 1px solid blue;} */
+#wrap img {width: 150px; height: 200px; background:#333; position: absolute; }
